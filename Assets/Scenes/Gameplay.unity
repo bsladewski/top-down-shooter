@@ -902,6 +902,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1782534446}
     m_Modifications:
+    - target: {fileID: 340960635263722792, guid: c299bf618fca6ce46bdd9448d859b4ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3420954773731786547, guid: c299bf618fca6ce46bdd9448d859b4ed,
         type: 3}
       propertyPath: m_LocalRotation.w
@@ -936,6 +941,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -95.855
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645778584416607733, guid: c299bf618fca6ce46bdd9448d859b4ed,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645778584416607733, guid: c299bf618fca6ce46bdd9448d859b4ed,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3645778584416607733, guid: c299bf618fca6ce46bdd9448d859b4ed,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5111469173669557684, guid: c299bf618fca6ce46bdd9448d859b4ed,
         type: 3}
@@ -992,12 +1012,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7836887244034289586, guid: c299bf618fca6ce46bdd9448d859b4ed,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9137734479790163024, guid: c299bf618fca6ce46bdd9448d859b4ed,
         type: 3}
       propertyPath: m_Name
       value: Weapons
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6866975521981914240, guid: c299bf618fca6ce46bdd9448d859b4ed, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c299bf618fca6ce46bdd9448d859b4ed, type: 3}
 --- !u!4 &1782534446 stripped
 Transform:
