@@ -12,6 +12,9 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private VisualEffect muzzleFlare;
 
+    [SerializeField]
+    private AudioClip[] shootSFX;
+
     private float cooldown = 0f;
 
     private void Update()
@@ -40,6 +43,7 @@ public class Weapon : MonoBehaviour
                 );
             }
             muzzleFlare.Play();
+            SoundSystem.Instance.Play(shootSFX[Random.Range(0, shootSFX.Length)], transform.position);
         }
     }
 }
