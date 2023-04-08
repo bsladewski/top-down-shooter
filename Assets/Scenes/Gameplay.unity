@@ -723,6 +723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 872288545}
+  animator: {fileID: 759332844}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,25 +25,30 @@ public class Weapon : MonoBehaviour
         }
     }
 
-    public void TryShoot()
+    public bool TryShoot()
     {
         if (cooldown <= 0f)
         {
             cooldown = 1f / weaponSO.shotsPerSecond;
             for (int i = 0; i < weaponSO.projectilesPerShot; i++)
             {
+                Vector3 bulletLookAt = bulletSpawn.position + bulletSpawn.forward;
+                bulletLookAt.y = bulletSpawn.position.y;
                 Transform bullet = Instantiate(
                     weaponSO.bulletSO.bulletPrefab,
                     bulletSpawn.position,
-                    bulletSpawn.rotation);
+                    Quaternion.identity);
+                bullet.transform.LookAt(bulletLookAt, Vector3.up);
                 bullet.transform.Rotate(
-                    Random.Range(-weaponSO.spread, weaponSO.spread),
+                    0f,
                     Random.Range(-weaponSO.spread, weaponSO.spread),
                     0f
                 );
             }
             muzzleFlare.Play();
             SoundSystem.Instance.Play(shootSFX[Random.Range(0, shootSFX.Length)], transform.position);
+            return true;
         }
+        return false;
     }
 }

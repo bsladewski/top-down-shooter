@@ -2,13 +2,20 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    [SerializeField] Weapon weapon;
+    [SerializeField]
+    private Weapon weapon;
+
+    [SerializeField]
+    private Animator animator;
 
     void Update()
     {
         if (Input.GetMouseButton(0))
         {
-            weapon.TryShoot();
+            if (weapon.TryShoot())
+            {
+                animator.SetTrigger("Shoot");
+            }
         }
     }
 }
