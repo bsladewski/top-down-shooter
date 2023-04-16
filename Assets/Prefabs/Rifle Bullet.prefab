@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3395889564863470135}
+  - component: {fileID: 5338479353786081587}
   - component: {fileID: -2821849332400492769}
-  - component: {fileID: 3035794573464171497}
+  - component: {fileID: -8683862497547942844}
   m_Layer: 0
   m_Name: Rifle Bullet
   m_TagString: Untagged
@@ -34,6 +35,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!2083052967 &5338479353786081587
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553728069544318577}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: 7bd6dd7988e012546a77b312e921ccfc, type: 3}
+  m_InitialEventName: OnPlay
+  m_InitialEventNameOverriden: 0
+  m_StartSeed: 0
+  m_ResetSeedOnPlay: 1
+  m_ResourceVersion: 1
+  m_PropertySheet:
+    m_Float:
+      m_Array: []
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array: []
+    m_Int:
+      m_Array: []
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array: []
+    m_Bool:
+      m_Array: []
 --- !u!114 &-2821849332400492769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48,19 +86,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <bulletSO>k__BackingField: {fileID: 11400000, guid: 79e4513be08aceb4ca267d0d327903cf,
     type: 2}
---- !u!135 &3035794573464171497
-SphereCollider:
+  hitVFX: {fileID: 5338479353786081587}
+  hitSFX:
+  - {fileID: 8300000, guid: 78fbf47211394ea4299ec1095c2787f0, type: 3}
+  - {fileID: 8300000, guid: f3477e7aee094ac4a8128c8e45b5af57, type: 3}
+  - {fileID: 8300000, guid: 7105fd462a120d54085c16eef81bbe61, type: 3}
+--- !u!73398921 &-8683862497547942844
+VFXRenderer:
+  serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553728069544318577}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.025
-  m_Center: {x: 0, y: 0, z: 0}
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &7481801434314879029
 GameObject:
   m_ObjectHideFlags: 0

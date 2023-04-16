@@ -442,7 +442,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponSO: {fileID: 11400000, guid: 46fe3fc9a30a4124499f6b3c6b800bc0, type: 2}
   bulletSpawn: {fileID: 6671588502842526457}
-  muzzleFlare: {fileID: 4835951870339953314}
+  muzzleFlareVFX: {fileID: 4835951870339953314}
+  shootSFX:
+  - {fileID: 8300000, guid: 7112f070f4a1b2f4786454af8011c6df, type: 3}
+  - {fileID: 8300000, guid: 9ddce7f3c0575be4597a5516401f7a3a, type: 3}
+  - {fileID: 8300000, guid: 894940c9877d66e48abdb525303194ea, type: 3}
+  bulletSpawnRaycastOffset: 1
 --- !u!1 &8605847843428563718
 GameObject:
   m_ObjectHideFlags: 0

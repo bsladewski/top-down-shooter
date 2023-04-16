@@ -10,10 +10,13 @@ public class Weapon : MonoBehaviour
     private Transform bulletSpawn;
 
     [SerializeField]
-    private VisualEffect muzzleFlare;
+    private VisualEffect muzzleFlareVFX;
 
     [SerializeField]
     private AudioClip[] shootSFX;
+
+    [SerializeField, Tooltip("Adjusts the initial bullet raycast position to account for bullet spawn point clipping.")]
+    private float bulletSpawnRaycastOffset;
 
     private float cooldown = 0f;
 
@@ -44,8 +47,10 @@ public class Weapon : MonoBehaviour
                     Random.Range(-weaponSO.spread, weaponSO.spread),
                     0f
                 );
+                bullet.GetComponent<Bullet>().SetInitialRaycastPosition(
+                    bulletSpawn.position - bulletSpawn.forward * bulletSpawnRaycastOffset);
             }
-            muzzleFlare.Play();
+            muzzleFlareVFX.Play();
             SoundSystem.Instance.Play(shootSFX[Random.Range(0, shootSFX.Length)], transform.position);
             return true;
         }
