@@ -7,11 +7,11 @@ public class WeaponSO : ScriptableObject
     public BulletSO bulletSO { get; private set; }
 
     [field: SerializeField]
-    public float shotsPerSecond = 5f;
+    public float shotsPerSecond { get; private set; } = 5f;
 
     [field: SerializeField]
-    public int projectilesPerShot = 1;
+    public int projectilesPerShot { get; private set; } = 1;
 
     [field: SerializeField]
-    public float spread = 10f;
+    public float spread { get; private set; } = 10f;
 }

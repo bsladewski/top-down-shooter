@@ -18,7 +18,7 @@ public class Weapon : MonoBehaviour
     [SerializeField, Tooltip("Adjusts the initial bullet raycast position to account for bullet spawn point clipping.")]
     private float bulletSpawnRaycastOffset;
 
-    private float cooldown = 0f;
+    private float cooldown;
 
     private void Update()
     {

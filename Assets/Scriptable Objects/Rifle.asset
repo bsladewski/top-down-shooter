@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <bulletSO>k__BackingField: {fileID: 11400000, guid: 79e4513be08aceb4ca267d0d327903cf,
     type: 2}
-  shotsPerSecond: 10
-  projectilesPerShot: 1
-  spread: 2
+  <shotsPerSecond>k__BackingField: 5
+  <projectilesPerShot>k__BackingField: 1
+  <spread>k__BackingField: 10

@@ -8,6 +8,9 @@ public class BulletCollision : MonoBehaviour
 
     public void OnBulletCollision(Bullet bullet, Vector3 hitPoint)
     {
-        if (bulletCollisionEvent != null) bulletCollisionEvent.Invoke();
+        if (bulletCollisionEvent != null)
+        {
+            bulletCollisionEvent.Invoke();
+        }
     }
 }

@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
 
     private Vector3 lastPosition;
 
-    private bool skipUpdate = false;
+    private bool skipUpdate;
 
     public void SetInitialRaycastPosition(Vector3 initialRaycastPosition)
     {

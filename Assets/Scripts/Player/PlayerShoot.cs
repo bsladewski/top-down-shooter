@@ -8,17 +8,19 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
-    void Update()
+    private PlayerCombatInputActions inputActions;
+
+    private void Start()
     {
-        if (Input.GetKey(KeyCode.UpArrow) ||
-            Input.GetKey(KeyCode.DownArrow) ||
-            Input.GetKey(KeyCode.RightArrow) ||
-            Input.GetKey(KeyCode.LeftArrow))
+        inputActions = new PlayerCombatInputActions();
+        inputActions.Enable();
+    }
+
+    private void Update()
+    {
+        if (inputActions.Default.Shoot.IsPressed() && weapon.TryShoot())
         {
-            if (weapon.TryShoot())
-            {
-                animator.SetTrigger("Shoot");
-            }
+            animator.SetTrigger("Shoot");
         }
     }
 }
