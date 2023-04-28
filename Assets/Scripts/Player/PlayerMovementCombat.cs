@@ -29,7 +29,7 @@ public class PlayerMovementCombat : MonoBehaviour
         Vector2 targetMoveDir = inputActions.Default.Move.ReadValue<Vector2>();
 
         // get target aim direction from player input
-        Vector2 targetAimDir = inputActions.Default.Shoot.ReadValue<Vector2>();
+        Vector2 targetAimDir = inputActions.Default.Aim.ReadValue<Vector2>();
         if (targetAimDir == Vector2.zero)
         {
             targetAimDir = targetMoveDir;

@@ -15,4 +15,4 @@ MonoBehaviour:
   <bulletPrefab>k__BackingField: {fileID: 3395889564863470135, guid: 5a4b70e5f33344b4da98cd278d968f06,
     type: 3}
   <range>k__BackingField: 25
-  <speed>k__BackingField: 50
+  <speed>k__BackingField: 30
