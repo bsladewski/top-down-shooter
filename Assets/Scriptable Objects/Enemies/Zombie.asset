@@ -15,5 +15,5 @@ MonoBehaviour:
   <enemyPrefab>k__BackingField: {fileID: 4012088608835542340, guid: e0343d05ee154de40a458481c80db13c,
     type: 3}
   <moveSpeed>k__BackingField: 0.8
-  <attackCooldown>k__BackingField: 1
-  <attackRange>k__BackingField: 2
+  <attackCooldown>k__BackingField: 2
+  <attackRange>k__BackingField: 1.75

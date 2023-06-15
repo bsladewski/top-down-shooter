@@ -510,6 +510,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 374480846}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &389610072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4012088608835542341, guid: e0343d05ee154de40a458481c80db13c,
+    type: 3}
+  m_PrefabInstance: {fileID: 4012088608653600541}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &389610075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389610072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af8c25d08ec7d544b653351f0a8b6c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletCollisionEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &389610076
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389610072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 1.8, z: 0.8}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,6 +1301,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Zombie Characters
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012088609160944292, guid: e0343d05ee154de40a458481c80db13c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4012088609160944312, guid: e0343d05ee154de40a458481c80db13c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0343d05ee154de40a458481c80db13c, type: 3}
