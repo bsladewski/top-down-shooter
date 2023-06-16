@@ -11,4 +11,7 @@ public class BulletSO : ScriptableObject
 
     [field: SerializeField]
     public float speed { get; private set; } = 10;
+
+    [field: SerializeField]
+    public int damage { get; private set; } = 1;
 }

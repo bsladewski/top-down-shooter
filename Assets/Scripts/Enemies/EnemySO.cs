@@ -14,4 +14,7 @@ public class EnemySO : ScriptableObject
 
     [field: SerializeField]
     public float attackRange { get; private set; } = 1f;
+
+    [field: SerializeField]
+    public int health { get; private set; } = 10;
 }

@@ -4,7 +4,7 @@
 
 ## Overview
 
-This is a top-down shooter video game implemented in Unity. This project is currently under the working title "Alien Planet Assault". The planned theme of the game is science fiction, though this has not been finalized. There is also a stretch goal that the game will feature a number role-playing game elements.
+A top-down shooter video game implemented in Unity (v2021.3.19f1).
 
 ## Progress Videos
 
@@ -12,3 +12,4 @@ This is a top-down shooter video game implemented in Unity. This project is curr
 -   [Aim (2023-04-02)](https://www.loom.com/share/12927bbc42b542468799fe2d2d5da37a)
 -   [Bullet Collisions (2023-04-15)](https://www.loom.com/share/ddb979b7adac4521ae00f702788a52b6)
 -   [Zombie - Day 1 (2023-06-14)](https://www.loom.com/share/f308dfe2698c46a2b30dafe5ab87e345)
+-   [Zombie - Day 2 (2023-06-15)](https://www.loom.com/share/967f0421a3b240bfbd61b56518b15dd2)

@@ -10,11 +10,21 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private Animator animator;
 
+    private EnemyDeath enemyDeath;
+
     private float attackCooldown;
 
     private Vector3 direction;
 
     private GameObject target;
+
+    private int health;
+
+    private void Start()
+    {
+        enemyDeath = GetComponent<EnemyDeath>();
+        health = enemySO.health;
+    }
 
     private void Update()
     {
@@ -58,6 +68,17 @@ public class Enemy : MonoBehaviour
             animator.SetFloat("Speed", 0f);
             animator.SetTrigger("Attack");
             attackCooldown = enemySO.attackCooldown;
+        }
+    }
+
+    public void OnBulletCollision(Bullet bullet, Vector3 hitPoint)
+    {
+        animator.SetTrigger("Hit");
+        health -= bullet.bulletSO.damage;
+        if (health <= 0)
+        {
+            enemyDeath.Die();
+            Destroy(this);
         }
     }
 }
